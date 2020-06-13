@@ -1,0 +1,19 @@
+  {
+    "name": "Rate My UW Professors",
+    "version": "1.0",
+    "description": "Integrates Rate My Professors into UW's MyPlan.",
+    "permissions": [
+      "storage",
+      "activeTab",
+      "declarativeContent"
+    ],
+    "browser_action": {
+      "default_icon": "finalss.PNG"
+    },
+    "icons": { 
+      "16": "finalss.PNG", 
+      "32": "finalss.PNG", 
+      "48": "finalss.PNG" 
+    },
+    "manifest_version": 2
+  }

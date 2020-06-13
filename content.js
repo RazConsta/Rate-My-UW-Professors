@@ -1,0 +1,1 @@
+alert('Stop wasting your time.')
