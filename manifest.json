@@ -2,25 +2,39 @@
     "name": "Rate My UW Professors",
     "version": "1.0",
     "description": "Integrates Rate My Professors into UW's MyPlan.",
+    "author": "Raz Consta",
     "background": {
+      "peristent": false,
       "scripts": [
         "background.js"
-      ],
-      "peristent": false
+      ]
     },
     "browser_action": {
-      "default_icon": "finalss.png",
+      "default_icon": "logo.png",
       "default_popup": "popup.html"
     },
+    "content_scripts": [
+      {
+        "matches": [
+          "https://myplan.uw.edu/course/*"
+        ],
+        "css": [
+          "style.css"
+        ],
+        "js": [
+          "content.js"
+        ]
+      }
+    ],
     "icons": {
-      "16": "finalss.png",
-      "32": "finalss.png",
-      "48": "finalss.png"
+      "16": "logo.png",
+      "32": "logo.png",
+      "48": "logo.png"
     },
     "permissions": [
-      "storage",
       "activeTab",
-      "declarativeContent"
+      "declarativeContent",
+      "storage"
     ],
     "manifest_version": 2
   }
